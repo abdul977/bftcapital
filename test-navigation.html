@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Test - BFT Capitals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background: var(--bg-dark);
+            min-height: 100vh;
+            padding-top: 2rem;
+        }
+        .test-content {
+            padding: 4rem 2rem;
+            text-align: center;
+            color: var(--text);
+        }
+        .test-info {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .category-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid var(--accent-red);
+        }
+        .category-item h4 {
+            color: var(--accent-red);
+            margin-bottom: 0.5rem;
+        }
+        .category-item ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .category-item li {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="container navbar-flex">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img src="logoW.PNG" alt="BFT Capitals Logo" class="navbar-logo-img">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="desktop-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Company</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages/about.html">About Us</a></li>
+                                <li><a href="pages/contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Community</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages/community.html">Community</a></li>
+                                <li><a href="pages/events.html">Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Portfolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages/showcase.html">Showcase</a></li>
+                                <li><a href="pages/projects.html">Projects</a></li>
+                                <li><a href="pages/partners.html">Partners</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation Toggle -->
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Overlay -->
+        <nav class="nav">
+            <button class="nav-close" aria-label="Close navigation">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Company</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/community.html">Community</a></li>
+                        <li><a href="pages/events.html">Events</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/showcase.html">Showcase</a></li>
+                        <li><a href="pages/projects.html">Projects</a></li>
+                        <li><a href="pages/partners.html">Partners</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog/index.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Test Content -->
+    <div class="test-content">
+        <h1>Navigation Test Page</h1>
+        <div class="test-info">
+            <h2>✅ Navigation Successfully Reorganized!</h2>
+            <p>The navigation has been reorganized from 9 individual links into 4 logical categories with dropdown menus:</p>
+            
+            <div class="category-list">
+                <div class="category-item">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h4>Community</h4>
+                    <ul>
+                        <li>Community</li>
+                        <li>Events</li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h4>Portfolio</h4>
+                    <ul>
+                        <li>Showcase</li>
+                        <li>Projects</li>
+                        <li>Partners</li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h4>Standalone</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+                <strong>Features:</strong><br>
+                • Hover dropdowns on desktop<br>
+                • Click dropdowns on mobile (drops down below toggle)<br>
+                • Smooth animations and transitions<br>
+                • Proper z-index stacking<br>
+                • Updated footer links<br>
+                • FontAwesome chevron icons<br>
+                • Mobile dropdowns appear underneath (not to the side)
+            </p>
+
+            <div style="margin-top: 2rem; padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 6px; border-left: 3px solid var(--accent-red);">
+                <strong style="color: var(--accent-red);">Mobile Testing:</strong><br>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">
+                    Resize your browser window or use mobile view to test the mobile navigation.
+                    Click on the hamburger menu, then click on any category (Company, Community, Portfolio)
+                    to see the dropdown menus appear below the toggle buttons. The mobile navigation will
+                    <strong>NOT close</strong> when you click on dropdown toggles - only when you click on actual links.
+                </span>
+            </div>
+
+            <div style="margin-top: 1rem; padding: 1rem; background: rgba(0,255,0,0.05); border-radius: 6px; border-left: 3px solid #00ff00;">
+                <strong style="color: #00ff00;">✅ Fixed Issues:</strong><br>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">
+                    • Mobile navigation no longer closes when clicking dropdown toggles<br>
+                    • Dropdowns appear below (not to the side) on mobile<br>
+                    • Smooth animations for dropdown expansion<br>
+                    • Proper event handling to prevent conflicts
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
