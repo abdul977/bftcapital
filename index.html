@@ -1,99 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BFT Capitals</title>
+    <meta name="description" content="BFT Capitals - Leading Bitcoin Intelligence Firm in Nigeria. Redefining multi-market finance and asset management through Bitcoin education, market intelligence, and accessible wealth systems.">
+    <meta name="keywords" content="Bitcoin, cryptocurrency, investment, Nigeria, Africa, financial education, wealth management, BFT Capitals">
+    <meta name="author" content="BFT Capitals">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bftcapitals.com">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="BFT Capitals - Leading Bitcoin Intelligence Firm">
+    <meta property="og:description" content="Redefining multi-market finance and asset management through Bitcoin education and accessible wealth systems in Nigeria and Africa.">
+    <meta property="og:image" content="https://bftcapitals.com/logoW.PNG">
+    <meta property="og:url" content="https://bftcapitals.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BFT Capitals">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BFT Capitals - Leading Bitcoin Intelligence Firm">
+    <meta name="twitter:description" content="Redefining multi-market finance and asset management through Bitcoin education and accessible wealth systems.">
+    <meta name="twitter:image" content="https://bftcapitals.com/logoW.PNG">
+    <meta name="twitter:site" content="@bftcapitals">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" href="logoW.PNG">
+    <link rel="apple-touch-icon" href="logoW.PNG">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    
+    <!-- Page Title -->
+    <title>BFT Capitals - Leading Bitcoin Intelligence Firm | Nigeria's Gateway to Bitcoin</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BFT Capitals",
+        "description": "Leading Bitcoin Intelligence Firm in Nigeria",
+        "url": "https://bftcapitals.com",
+        "logo": "https://bftcapitals.com/logoW.PNG",
+        "sameAs": [
+            "https://x.com/bftcapitals",
+            "https://www.instagram.com/bftcapitals/",
+            "https://www.tiktok.com/@bftcapitals",
+            "https://web.facebook.com/profile.php?id=61561209968336"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service"
+        }
+    }
+    </script>
 </head>
 <body>
-    <!-- Header/Navbar -->
-    <header>
-        <div class="navbar">
+
+    
+    <!-- Header with Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container navbar-flex">
+                <!-- Logo -->
                 <div class="navbar-logo">
-                    <img src="logoW.PNG" alt="BFT Capitals Logo" class="navbar-logo-img">
+                    <a href="#home" aria-label="BFT Capitals Home">
+                        <img src="logoW.PNG" alt="BFT Capitals Logo" class="navbar-logo-img" width="120" height="40">
+                    </a>
                 </div>
 
                 <!-- Desktop Navigation Menu -->
-                <nav class="desktop-nav" aria-label="Main navigation">
-                    <ul class="desktop-nav-links">
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Company</a>
+                <div class="desktop-nav" aria-label="Main navigation">
+                    <ul class="desktop-nav-links" role="menubar">
+                        <li role="none"><a href="#home" role="menuitem" class="active">Home</a></li>
+                        <li role="none" class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="menuitem">Company</a>
                             <ul class="dropdown-menu">
                                 <li><a href="pages/about.html">About Us</a></li>
                                 <li><a href="pages/contact.html">Contact Us</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Community</a>
+                        <li role="none" class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="menuitem">Community</a>
                             <ul class="dropdown-menu">
                                 <li><a href="pages/community.html">Community</a></li>
                                 <li><a href="pages/events.html">Events</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Portfolio</a>
+                        <li role="none" class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="menuitem">Portfolio</a>
                             <ul class="dropdown-menu">
                                 <li><a href="pages/showcase.html">Showcase</a></li>
                                 <li><a href="pages/projects.html">Projects</a></li>
                                 <li><a href="pages/partners.html">Partners</a></li>
                             </ul>
                         </li>
-                        <li><a href="blog/index.html">Blog</a></li>
+                        <li role="none"><a href="blog/index.html" role="menuitem">Blog</a></li>
                     </ul>
-                </nav>
+                </div>
 
                 <!-- Mobile Navigation Toggle -->
-                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
+                <button class="nav-toggle" 
+                        aria-label="Toggle navigation menu" 
+                        aria-expanded="false" 
+                        aria-controls="mobile-nav">
+                    <span class="hamburger-line" aria-hidden="true"></span>
+                    <span class="hamburger-line" aria-hidden="true"></span>
+                    <span class="hamburger-line" aria-hidden="true"></span>
                 </button>
             </div>
-        </div>
+        </nav>
 
         <!-- Mobile Navigation Overlay -->
-        <nav class="nav">
-            <button class="nav-close" aria-label="Close navigation">
-                <i class="fas fa-times"></i>
+        <nav class="nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+            <button class="nav-close" aria-label="Close navigation menu">
+                <i class="fas fa-times" aria-hidden="true"></i>
             </button>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Company</a>
+            <ul class="nav-links" role="menu">
+                <li role="none"><a href="#home" role="menuitem" class="active">Home</a></li>
+                <li role="none" class="dropdown">
+                    <a href="#" class="dropdown-toggle" role="menuitem">Company</a>
                     <ul class="dropdown-menu">
                         <li><a href="pages/about.html">About Us</a></li>
                         <li><a href="pages/contact.html">Contact Us</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Community</a>
+                <li role="none" class="dropdown">
+                    <a href="#" class="dropdown-toggle" role="menuitem">Community</a>
                     <ul class="dropdown-menu">
                         <li><a href="pages/community.html">Community</a></li>
                         <li><a href="pages/events.html">Events</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Portfolio</a>
+                <li role="none" class="dropdown">
+                    <a href="#" class="dropdown-toggle" role="menuitem">Portfolio</a>
                     <ul class="dropdown-menu">
                         <li><a href="pages/showcase.html">Showcase</a></li>
                         <li><a href="pages/projects.html">Projects</a></li>
                         <li><a href="pages/partners.html">Partners</a></li>
                     </ul>
                 </li>
-                <li><a href="blog/index.html">Blog</a></li>
+                <li role="none"><a href="blog/index.html" role="menuitem">Blog</a></li>
             </ul>
         </nav>
-        <section id="home" class="hero-section">
-            <div class="hero-bg-image"></div>
-            <div class="hero-bg-overlay"></div>
-            <div class="hero-bg-overlay2"></div>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-bg-image" aria-hidden="true"></div>
+            <div class="hero-bg-overlay" aria-hidden="true"></div>
+            <div class="hero-bg-overlay2" aria-hidden="true"></div>
             <div class="hero-content">
-                <h1>
-                    Leading <span class="highlight">Bitcoin</span> Intelligence Firm <span class="dot">.</span>
+                <h1 id="hero-title">
+                    Leading <span class="highlight">Bitcoin</span> Intelligence Firm<span class="dot" aria-hidden="true">.</span>
                 </h1>
                 <h2>Redefining Multi-Market Finance And Asset Management</h2>
                 <div class="hero-desc-box">
@@ -101,254 +169,420 @@
                         Based in Nigeria, we champion financial sovereignty through Bitcoin education, market intelligence, and accessible wealth systems, focused on the future.
                     </p>
                 </div>
-                <a href="#" class="hero-btn">Learn More</a>
+                <a href="#mission" class="hero-btn" role="button" aria-describedby="hero-title">Learn More About Our Mission</a>
             </div>
         </section>
     </header>
 
-    <!-- Live Market Data -->
-    <section id="market" class="market-section">
-        <h2 class="market-title">Live Bitcoin Price (USD)</h2>
-        <div class="live-price-container">
-            <i class="fab fa-bitcoin"></i>
-            <div class="price-display">
-                <span id="btc-price" aria-live="polite">Loading...</span>
-                <span id="price-change" class="price-change"></span>
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Live Market Data Section -->
+        <section id="market" class="market-section" aria-labelledby="market-title">
+            <h2 id="market-title" class="market-title">Live Bitcoin Price (USD)</h2>
+            <div class="live-price-container" role="region" aria-live="polite" aria-label="Live Bitcoin price information">
+                <i class="fab fa-bitcoin" aria-hidden="true"></i>
+                <div class="price-display">
+                    <span id="btc-price" aria-live="polite" aria-label="Current Bitcoin price">Loading...</span>
+                    <span id="price-change" class="price-change" aria-live="polite" aria-label="24-hour price change"></span>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="market-card redesigned-market-card">
-                <div class="market-chart-full">
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                      <div id="tradingview_btc_chart"></div>
-                      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                      <script type="text/javascript">
-                      new TradingView.widget({
-                        "width": "100%",
-                        "height": 320,
-                        "symbol": "BINANCE:BTCUSDT",
-                        "interval": "30",
-                        "timezone": "Etc/UTC",
-                        "theme": "dark",
-                        "style": "1",
-                        "locale": "en",
-                        "toolbar_bg": "#23262f",
-                        "enable_publishing": false,
-                        "hide_top_toolbar": false,
-                        "hide_legend": false,
-                        "save_image": false,
-                        "container_id": "tradingview_btc_chart"
-                      });
-                      </script>
+            <div class="container">
+                <article class="market-card redesigned-market-card">
+                    <div class="market-chart-full">
+                        <!-- TradingView Widget -->
+                        <div class="tradingview-widget-container" role="img" aria-label="Bitcoin price chart">
+                            <div id="tradingview_btc_chart"></div>
+                            <noscript>
+                                <p>JavaScript is required to view the live Bitcoin chart. Please enable JavaScript in your browser.</p>
+                            </noscript>
+                        </div>
                     </div>
-                    <!-- TradingView Widget END -->
+                    <div class="market-stats-grid" role="region" aria-label="Bitcoin market statistics">
+                        <div class="market-stat">
+                            <span>Market Cap</span>
+                            <strong aria-label="Market capitalization">$2.21T</strong>
+                        </div>
+                        <div class="market-stat">
+                            <span>Total Supply</span>
+                            <strong aria-label="Total Bitcoin supply">21M BTC</strong>
+                        </div>
+                        <div class="market-stat">
+                            <span>Circulating Supply</span>
+                            <strong aria-label="Circulating Bitcoin supply">19.86M BTC</strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="mission-section mission-image-style" aria-labelledby="mission-title">
+            <div class="mission-row">
+                <h2 id="mission-title" class="mission-main-title">Our<br>Mission</h2>
+                <div class="mission-statement-box">
+                    <div class="mission-statement-border" aria-hidden="true"></div>
+                    <div class="mission-statement-text">
+                        Our mission at BFT Capitals is to promote early inclusion in the global Bitcoin revolution while building systems that preserve wealth, educate communities, and help Africa rise through financial independence.
+                    </div>
                 </div>
-                <div class="market-stats-grid">
-                    <div class="market-stat"><span>Market Cap</span><strong>$2.21T</strong></div>
-                    <div class="market-stat"><span>Total Supply</span><strong>21M BTC</strong></div>
-                    <div class="market-stat"><span>Circulating Supply</span><strong>19.86M BTC</strong></div>
+            </div>
+            
+            <div class="mission-standfor-row">
+                <div class="mission-standfor-title-wrap">
+                    <div class="mission-standfor-line" aria-hidden="true"></div>
+                    <h3 class="mission-standfor-title">What We Stand For</h3>
+                    <div class="mission-standfor-line" aria-hidden="true"></div>
+                </div>
+                
+                <div class="mission-standfor-carousel-container">
+                    <div class="mission-standfor-cards" role="region" aria-label="Our core values and principles" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem;">
+                        <article class="mission-standfor-card">
+                            <img src="for-the-people.jpg"
+                                 alt="People working together representing Bitcoin adoption for financial freedom"
+                                 loading="lazy"
+                                 width="300"
+                                 height="200"
+                                 style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                            <h4 class="mission-standfor-card-title">Bitcoin For The People</h4>
+                            <p class="mission-standfor-card-desc">We advocate for Bitcoin adoption as a tool for long-term financial freedom, especially in underserved economies.</p>
+                        </article>
+                        
+                        <article class="mission-standfor-card">
+                            <img src="pexels-davidmcbee-730564.jpg"
+                                 alt="Financial charts and data representing accessible wealth management systems"
+                                 loading="lazy"
+                                 width="300"
+                                 height="200"
+                                 style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                            <h4 class="mission-standfor-card-title">Accessible Wealth Structures</h4>
+                            <p class="mission-standfor-card-desc">We develop transparent and multi-market systems to help people store, grow, and protect their value.</p>
+                        </article>
+                        
+                        <article class="mission-standfor-card">
+                            <img src="pexels-henri-mathieu-8348468.jpg"
+                                 alt="Educational materials and resources for financial literacy"
+                                 loading="lazy"
+                                 width="300"
+                                 height="200"
+                                 style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                            <h4 class="mission-standfor-card-title">Financial Education & Awareness</h4>
+                            <p class="mission-standfor-card-desc">Through media, events, and thought leadership, we demystify emerging finance for individuals, families, and institutions.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- Carousel Indicators -->
+                    <div class="mission-standfor-indicators" role="tablist" aria-label="Carousel navigation">
+                        <button class="mission-standfor-indicator active" 
+                                role="tab" 
+                                aria-selected="true" 
+                                aria-controls="slide-0" 
+                                aria-label="Go to slide 1" 
+                                data-slide="0"></button>
+                        <button class="mission-standfor-indicator" 
+                                role="tab" 
+                                aria-selected="false" 
+                                aria-controls="slide-1" 
+                                aria-label="Go to slide 2" 
+                                data-slide="1"></button>
+                        <button class="mission-standfor-indicator" 
+                                role="tab" 
+                                aria-selected="false" 
+                                aria-controls="slide-2" 
+                                aria-label="Go to slide 3" 
+                                data-slide="2"></button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Our Mission -->
-    <section id="mission" class="mission-section mission-image-style">
-      <div class="mission-row">
-        <div class="mission-heading-block">
-          <h2 class="mission-main-title">Our<br>Mission</h2>
-        </div>
-        <div class="mission-statement-box">
-          <div class="mission-statement-border"></div>
-          <div class="mission-statement-text">
-            Our mission at Bafta Capitals is to promote early inclusion in the global Bitcoin revolution while building systems that preserve wealth, educate communities, and help Africa rise through financial independence.
-          </div>
-        </div>
-      </div>
-      <div class="mission-standfor-row">
-        <div class="mission-standfor-title-wrap">
-          <div class="mission-standfor-line" aria-hidden="true"></div>
-          <h3 class="mission-standfor-title">What We Stand For</h3>
-          <div class="mission-standfor-line" aria-hidden="true"></div>
-        </div>
-        <div class="mission-standfor-carousel-container">
-          <div class="mission-standfor-cards" role="region" aria-label="What we stand for">
-            <article class="mission-standfor-card">
-              <img src="for-the-people.jpg" alt="People working together representing Bitcoin adoption for financial freedom">
-              <h4 class="mission-standfor-card-title">BITCOIN FOR THE PEOPLE</h4>
-              <p class="mission-standfor-card-desc">We advocate for Bitcoin adoption as a tool for long-term financial freedom, especially in underserved economies.</p>
-            </article>
-            <article class="mission-standfor-card">
-              <img src="pexels-davidmcbee-730564.jpg" alt="Financial charts and data representing accessible wealth management systems">
-              <h4 class="mission-standfor-card-title">ACCESSIBLE WEALTH STRUCTURES</h4>
-              <p class="mission-standfor-card-desc">We develop transparent and multi-market systems to help people store, grow, and protect their value.</p>
-            </article>
-            <article class="mission-standfor-card">
-              <img src="pexels-henri-mathieu-8348468.jpg" alt="Educational materials and resources for financial literacy">
-              <h4 class="mission-standfor-card-title">FINANCIAL EDUCATION & AWARENESS</h4>
-              <p class="mission-standfor-card-desc">Through media, events, and thought leadership, we demystify emerging finance for individuals, families, and institutions.</p>
-            </article>
-          </div>
-          <div class="mission-standfor-indicators">
-            <div class="mission-standfor-indicator active" data-slide="0" aria-label="Go to slide 1"></div>
-            <div class="mission-standfor-indicator" data-slide="1" aria-label="Go to slide 2"></div>
-            <div class="mission-standfor-indicator" data-slide="2" aria-label="Go to slide 3"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section id="vision" class="vision-section">
-      <div class="vision-overlay"></div>
-      <div class="vision-content">
-        <div class="vision-title">The Vision Begins...</div>
-        <div class="vision-main">BITCOIN ACCEPTANCE MOVEMENT PROJECT</div>
-        <div class="vision-desc">
-          This initiative is focused on driving Bitcoin adoption across Africa. Our goal is to make Bitcoin accessible, trusted, and usable for everyday Africa—positioning BFT Capitals as the continent's gateway into the global Bitcoin economy.
-        </div>
-        <div class="vision-powered">-Powered by BFT Capitals</div>
-      </div>
-    </section>
-
-    <!-- Why it Matters / Project Section -->
-    <section id="about" class="why-section why-image-style">
-      <div class="why-row">
-        <h2 id="why-title" class="why-main-title why-main-title-reduced">Why It<br>Matters</h2>
-        <div class="why-statement-box">
-          <div class="why-statement-border" aria-hidden="true"></div>
-          <div class="why-statement-text">
-            Africa is rising. But without control over our money, we can't control our future.<br>
-            <strong>Bitcoin is not just a coin — it's a movement, a system, and a hedge.</strong><br>
-            We're here to help our people understand it, own it, and use it well.
-          </div>
-        </div>
-      </div>
-      <div class="leadership-row">
-        <div class="leadership-title-wrap">
-          <div class="leadership-line"></div>
-          <div class="leadership-title">Meet Our Leadership</div>
-          <div class="leadership-line"></div>
-        </div>
-        <div class="leadership-desc">
-          With half a decade of experience in crypto and blockchain technology, our team combines industry expertise with professional investment management to lead BFT Capital's Mission of a strong Bitcoin-driven future.
-        </div>
-        <div class="leadership-cards">
-          <div class="leadership-card">
-            <img src="Zubairu Muhammad Bello.jpg" alt="Portrait of Zubairu Muhammad Bello, Brand Strategist">
-            <div class="leadership-name">Zubairu Muhammad Bello</div>
-            <div class="leadership-role">Brand Strategist.</div>
-          </div>
-          <div class="leadership-card">
-            <img src="Ahmed Ibrahim Saminaka.jpg" alt="Portrait of Ahmed Ibrahim Saminaka, Chief Operation Officer">
-            <div class="leadership-name">Ahmed Ibrahim Saminaka</div>
-            <div class="leadership-role">Chief Operation Officer</div>
-          </div>
-          <div class="leadership-card">
-            <img src="Abdul'aziz Abdullahi.jpg" alt="Portrait of Abdul'aziz Abdullahi, Operations strategy lead">
-            <div class="leadership-name">Abdul'aziz Abdullahi</div>
-            <div class="leadership-role">Operations strategy lead</div>
-          </div>
-          <div class="leadership-card">
-            <img src="Usman Garba.jpg" alt="Portrait of Usman Garba, Chief Investment officer">
-            <div class="leadership-name">Usman Garba</div>
-            <div class="leadership-role">Chief Investment officer</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog-section">
-      <div class="blog-title-wrap">
-        <div class="blog-line"></div>
-        <div class="blog-title">Blog Posts</div>
-        <div class="blog-line"></div>
-      </div>
-      <div class="blog-cards">
-        <div class="blog-card">
-          <a href="blog/bitcoin-features-of-finance.html">
-            <img src="pexels-leeloothefirst-8358132.jpg" alt="Bitcoin Features of Finance">
-            <div class="blog-card-title">Bitcoin Features of Finance</div>
-            <div class="blog-card-meta">
-              <span class="blog-card-author">by Muhammad</span>
-              <span class="blog-card-time">January 15, 2025</span>
+        <!-- Vision Section -->
+        <section id="vision" class="vision-section" aria-labelledby="vision-title">
+            <div class="vision-overlay" aria-hidden="true"></div>
+            <div class="vision-content">
+                <div class="vision-title" id="vision-title">The Vision Begins...</div>
+                <h2 class="vision-main">Bitcoin Acceptance Movement Project</h2>
+                <div class="vision-desc">
+                    This initiative is focused on driving Bitcoin adoption across Africa. Our goal is to make Bitcoin accessible, trusted, and usable for everyday Africa—positioning BFT Capitals as the continent's gateway into the global Bitcoin economy.
+                </div>
+                <div class="vision-powered">-Powered by BFT Capitals</div>
             </div>
-          </a>
-        </div>
-        <div class="blog-card">
-          <a href="blog/bitcoin-changing-money.html">
-            <img src="pexels-leeloothefirst-8919544.jpg" alt="How Bitcoin is Changing the Way We Think About Money">
-            <div class="blog-card-title">How Bitcoin is Changing the Way We Think About Money</div>
-            <div class="blog-card-meta">
-              <span class="blog-card-author">by Muhammad</span>
-              <span class="blog-card-time">January 10, 2025</span>
+        </section>
+
+        <!-- About / Why it Matters Section -->
+        <section id="about" class="why-section why-image-style" aria-labelledby="why-title">
+            <div class="why-row">
+                <h2 id="why-title" class="why-main-title why-main-title-reduced">Why It<br>Matters</h2>
+                <div class="why-statement-box">
+                    <div class="why-statement-border" aria-hidden="true"></div>
+                    <div class="why-statement-text">
+                        Africa is rising. But without control over our money, we can't control our future.<br>
+                        <strong>Bitcoin is not just a coin — it's a movement, a system, and a hedge.</strong><br>
+                        We're here to help our people understand it, own it, and use it well.
+                    </div>
+                </div>
             </div>
-          </a>
-        </div>
-        <div class="blog-card">
-          <a href="blog/rise-of-bitcoin.html">
-            <img src="pexels-tima-miroshnichenko-7567436.jpg" alt="The Rise of Bitcoin: What Every Investor Should Know">
-            <div class="blog-card-title">The Rise of Bitcoin: What Every Investor Should Know</div>
-            <div class="blog-card-meta">
-              <span class="blog-card-author">by Muhammad</span>
-              <span class="blog-card-time">January 5, 2025</span>
+
+            <!-- Leadership Team -->
+            <div class="leadership-row">
+                <div class="leadership-title-wrap">
+                    <div class="leadership-line" aria-hidden="true"></div>
+                    <h3 class="leadership-title">Meet Our Leadership</h3>
+                    <div class="leadership-line" aria-hidden="true"></div>
+                </div>
+                <div class="leadership-desc">
+                    With half a decade of experience in crypto and blockchain technology, our team combines industry expertise with professional investment management to lead BFT Capital's Mission of a strong Bitcoin-driven future.
+                </div>
+
+                <div class="leadership-cards" role="region" aria-label="Leadership team members">
+                    <article class="leadership-card">
+                        <img src="Zubairu Muhammad Bello.jpg"
+                             alt="Portrait of Zubairu Muhammad Bello, Brand Strategist at BFT Capitals"
+                             loading="lazy"
+                             width="250"
+                             height="300">
+                        <h4 class="leadership-name">Zubairu Muhammad Bello</h4>
+                        <div class="leadership-role">Brand Strategist</div>
+                    </article>
+
+                    <article class="leadership-card">
+                        <img src="Ahmed Ibrahim Saminaka.jpg"
+                             alt="Portrait of Ahmed Ibrahim Saminaka, Chief Operation Officer at BFT Capitals"
+                             loading="lazy"
+                             width="250"
+                             height="300">
+                        <h4 class="leadership-name">Ahmed Ibrahim Saminaka</h4>
+                        <div class="leadership-role">Chief Operation Officer</div>
+                    </article>
+
+                    <article class="leadership-card">
+                        <img src="Abdul'aziz Abdullahi.jpg"
+                             alt="Portrait of Abdul'aziz Abdullahi, Operations Strategy Lead at BFT Capitals"
+                             loading="lazy"
+                             width="250"
+                             height="300">
+                        <h4 class="leadership-name">Abdul'aziz Abdullahi</h4>
+                        <div class="leadership-role">Operations Strategy Lead</div>
+                    </article>
+
+                    <article class="leadership-card">
+                        <img src="Usman Garba.jpg"
+                             alt="Portrait of Usman Garba, Chief Investment Officer at BFT Capitals"
+                             loading="lazy"
+                             width="250"
+                             height="300">
+                        <h4 class="leadership-name">Usman Garba</h4>
+                        <div class="leadership-role">Chief Investment Officer</div>
+                    </article>
+                </div>
             </div>
-          </a>
-        </div>
-      </div>
-    </section>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section" aria-labelledby="blog-title">
+            <div class="blog-title-wrap">
+                <div class="blog-line" aria-hidden="true"></div>
+                <h2 id="blog-title" class="blog-title">Latest Blog Posts</h2>
+                <div class="blog-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="blog-cards" role="region" aria-label="Recent blog articles">
+                <article class="blog-card">
+                    <img src="pexels-leeloothefirst-8358132.jpg"
+                         alt="Bitcoin: The Future of Finance or Just a Trend? - Blog post featured image"
+                         loading="lazy"
+                         width="400"
+                         height="250">
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="#" aria-describedby="blog-meta-1">Bitcoin: The Future of Finance or Just a Trend?</a>
+                        </h3>
+                        <div class="blog-card-meta" id="blog-meta-1">
+                            <span class="blog-card-author">by Muhammad</span>
+                            <time class="blog-card-time" datetime="2025-01-16T12:00:00Z">1h ago</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="pexels-leeloothefirst-8919544.jpg"
+                         alt="How Bitcoin is Changing the Way We Think About Money - Blog post featured image"
+                         loading="lazy"
+                         width="400"
+                         height="250">
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="#" aria-describedby="blog-meta-2">How Bitcoin is Changing the Way We Think About Money</a>
+                        </h3>
+                        <div class="blog-card-meta" id="blog-meta-2">
+                            <span class="blog-card-author">by Muhammad</span>
+                            <time class="blog-card-time" datetime="2025-01-16T12:00:00Z">1h ago</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="pexels-tima-miroshnichenko-7567436.jpg"
+                         alt="The Rise of Bitcoin: What Every Investor Should Know - Blog post featured image"
+                         loading="lazy"
+                         width="400"
+                         height="250">
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="#" aria-describedby="blog-meta-3">The Rise of Bitcoin: What Every Investor Should Know</a>
+                        </h3>
+                        <div class="blog-card-meta" id="blog-meta-3">
+                            <span class="blog-card-author">by Muhammad</span>
+                            <time class="blog-card-time" datetime="2025-01-16T12:00:00Z">1h ago</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer id="contact" class="footer-redesign">
-      <div class="footer-main">
-        <div class="footer-col footer-logo-col">
-          <img src="logoW.PNG" alt="BFT Capitals Logo" class="footer-logo-img">
-        </div>
-        <div class="footer-col footer-links-col">
-          <div class="footer-links-group">
-            <div class="footer-links-title">Company</div>
-            <a href="pages/about.html">About Us</a>
-            <a href="pages/contact.html">Contact Us</a>
-            <a href="blog/index.html">Blog</a>
-          </div>
-          <div class="footer-links-group">
-            <div class="footer-links-title">Community</div>
-            <a href="pages/community.html">Community</a>
-            <a href="pages/events.html">Events</a>
-            <a href="pages/contribution.html">Contributing</a>
-          </div>
-          <div class="footer-links-group">
-            <div class="footer-links-title">Portfolio</div>
-            <a href="pages/showcase.html">Showcase</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/partners.html">Partners</a>
-          </div>
-        </div>
-        <div class="footer-col footer-newsletter-col">
-          <div class="footer-newsletter-title">Let's keep in Touch</div>
-          <div class="footer-newsletter-desc">
-            Enter your email to get the latest updates on our projects.
-          </div>
-          <form class="footer-newsletter-form">
-            <input type="email" placeholder="your@email.com" required>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-social-row">
-        <a href="https://x.com/bftcapitals" class="footer-social-icon"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/bftcapitals/" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@bftcapitals?_t=ZM-8xLRNKDDVgr&_r=1" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
-        <a href="https://web.facebook.com/profile.php?id=61561209968336#" class="footer-social-icon"><i class="fab fa-facebook"></i></a>
-      </div>
-      <div class="footer-divider"></div>
-      <div class="footer-copy-redesign">
-        BFT Capitals. Copyright © 2025. All Rights Reserved
-      </div>
-    </footer>
+    <footer id="contact" class="footer-redesign" role="contentinfo">
+        <div class="footer-main footer-grid">
+            <!-- Logo Column -->
+            <div class="footer-col footer-logo-col">
+                <img src="logoW.PNG" alt="BFT Capitals Logo" class="footer-logo-img" width="120" height="40">
+                <p class="footer-description">
+                    Leading Bitcoin Intelligence Firm championing financial sovereignty through education and accessible wealth systems.
+                </p>
+            </div>
 
-    <script src="main.js"></script>
+            <!-- Links Column -->
+            <div class="footer-col footer-links-col">
+                <nav aria-label="Footer navigation">
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">Company</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="pages/about.html" rel="noopener">About Us</a></li>
+                            <li><a href="pages/contact.html" rel="noopener">Contact Us</a></li>
+                            <li><a href="blog/index.html" rel="noopener">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">Community</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="pages/community.html" rel="noopener">Community</a></li>
+                            <li><a href="pages/events.html" rel="noopener">Events</a></li>
+                            <li><a href="pages/contribution.html" rel="noopener">Contributing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">Portfolio</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="pages/showcase.html" rel="noopener">Showcase</a></li>
+                            <li><a href="pages/projects.html" rel="noopener">Projects</a></li>
+                            <li><a href="pages/partners.html" rel="noopener">Partners</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="footer-col footer-newsletter-col">
+                <h4 class="footer-newsletter-title">Let's Keep in Touch</h4>
+                <p class="footer-newsletter-desc">
+                    Enter your email to get the latest updates on our projects and Bitcoin insights.
+                </p>
+                <form class="footer-newsletter-form" aria-label="Newsletter subscription">
+                    <label for="newsletter-email" class="visually-hidden">Email address</label>
+                    <input type="email"
+                           id="newsletter-email"
+                           name="email"
+                           placeholder="your@email.com"
+                           required
+                           aria-describedby="newsletter-desc">
+                    <button type="submit" aria-label="Subscribe to newsletter">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social-row" role="region" aria-label="Social media links">
+            <a href="https://x.com/bftcapitals"
+               class="footer-social-icon"
+               aria-label="Follow us on X (Twitter)"
+               rel="noopener noreferrer"
+               target="_blank">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/bftcapitals/"
+               class="footer-social-icon"
+               aria-label="Follow us on Instagram"
+               rel="noopener noreferrer"
+               target="_blank">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.tiktok.com/@bftcapitals?_t=ZM-8xLRNKDDVgr&_r=1"
+               class="footer-social-icon"
+               aria-label="Follow us on TikTok"
+               rel="noopener noreferrer"
+               target="_blank">
+                <i class="fab fa-tiktok" aria-hidden="true"></i>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=61561209968336"
+               class="footer-social-icon"
+               aria-label="Follow us on Facebook"
+               rel="noopener noreferrer"
+               target="_blank">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <!-- Footer Divider -->
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <!-- Copyright -->
+        <div class="footer-copy-redesign">
+            <p>&copy; 2025 BFT Capitals. All Rights Reserved. |
+               <a href="#" rel="noopener">Privacy Policy</a> |
+               <a href="#" rel="noopener">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+    <!-- TradingView Widget Script -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js" defer></script>
+    <script type="text/javascript">
+        // Initialize TradingView widget when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof TradingView !== 'undefined') {
+                new TradingView.widget({
+                    "width": "100%",
+                    "height": 320,
+                    "symbol": "BINANCE:BTCUSDT",
+                    "interval": "30",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#23262f",
+                    "enable_publishing": false,
+                    "hide_top_toolbar": false,
+                    "hide_legend": false,
+                    "save_image": false,
+                    "container_id": "tradingview_btc_chart"
+                });
+            }
+        });
+    </script>
+
+    <!-- Main JavaScript -->
+    <script src="main.js" defer></script>
+
+    <!-- Service Worker Registration (Optional for PWA features) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful');
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </body>
 </html>
